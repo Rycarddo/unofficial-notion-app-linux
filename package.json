@@ -1,0 +1,37 @@
+{
+  "name": "unofficial-notion-app-linux",
+  "version": "1.0.0",
+  "description": "Notion App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": {
+    "name": "Rycarddo",
+    "email": "devrycarddo@gmail.com"
+  },
+  "homepage": "https://github.com/Rycarddo/unofficial-notion-app-linux",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^39.2.4",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.unofficial.notion",
+    "productName": "Notion",
+    "linux": {
+      "target": [
+        "deb"
+      ],
+      "category": "Utility",
+      "icon": "./icon.png",
+      "executableName": "unofficial-notion-app"
+    },
+    "deb": {
+      "depends": [],
+      "maintainer": "Rycarddo devrycarddo@gmail.com",
+      "packageName": "unofficial-notion-app"
+    }
+  }
+}
